@@ -1,0 +1,17 @@
+{
+  "name": "arctic",
+  "version": "0.0.0",
+  "description": "The snowy home of Arctic Ice Studio",
+  "author": "Arctic Ice Studio <development@arcticicestudio.com> (https://www.arcticicestudio.com)",
+  "homepage": "https://www.arcticicestudio.com",
+  "repository": "https://github.com/arcticicestudio/arctic",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "yarn": "^1.17.3"
+  },
+  "workspaces": [
+    "packages/*",
+    "www"
+  ]
+}
