@@ -12,4 +12,5 @@
 # like `.git` or any other critical paths.
 !**/.gatsby
 !.eslintrc.js
+!.huskyrc.js
 !.remarkrc.js
