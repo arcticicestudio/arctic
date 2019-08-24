@@ -7,6 +7,8 @@
  * License:    MIT
  */
 
+const { resolve } = require("path");
+
 /**
  * The ESLint configuration.
  * @see https://eslint.org/docs/user-guide/configuring
@@ -23,6 +25,14 @@ module.exports = {
     "@arcticicestudio/eslint-config/react-hooks",
     "@arcticicestudio/eslint-config/prettier"
   ],
+  settings: {
+    "import/resolver": {
+      node: {
+        /* Resolve Webpack alias imports */
+        paths: [resolve(__dirname, "src"), resolve(__dirname, "src/components")]
+      }
+    }
+  },
   overrides: [
     {
       files: ["*.ts", "*.tsx"],
