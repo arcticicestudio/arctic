@@ -32,6 +32,16 @@ module.exports = {
         project: "./tsconfig.json",
         tsconfigRootDir: "."
       }
+    },
+    {
+      /*
+       * Allow to use development dependencies in Gatsby configuration files since these are necessary and will
+       * be provided by either Gatsby itself or another without being explicitly defined as package dependency.
+       */
+      files: ["**/.gatsby/**/*.js"],
+      rules: {
+        "import/no-extraneous-dependencies": "off"
+      }
     }
   ]
 };
