@@ -25,6 +25,7 @@ module.exports = {
     "@arcticicestudio/eslint-config/react-hooks",
     "@arcticicestudio/eslint-config/prettier"
   ],
+  plugins: ["babel"],
   settings: {
     "import/resolver": {
       node: {
@@ -32,6 +33,18 @@ module.exports = {
         paths: [resolve(__dirname, "src"), resolve(__dirname, "src/components")]
       }
     }
+  },
+  rules: {
+    /*
+     * Enable support for experimental features:
+     *
+     * - `babel/camelcase` - doesn't complain about optional chaining (`let foo = bar?.a_b;`).
+     * - `babel/no-unused-expressions` - doesn't fail when using `do` expressions or optional chaining (`a?.b()`).
+     */
+    camelcase: "off",
+    "babel/camelcase": "error",
+    "no-unused-expressions": "off",
+    "babel/no-unused-expressions": "error"
   },
   overrides: [
     {
