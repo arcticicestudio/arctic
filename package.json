@@ -15,12 +15,14 @@
     "www"
   ],
   "scripts": {
-    "format": "npm-run-all format:fix*",
+    "format": "npm-run-all format:fix* format:pretty",
     "format:fix-js": "eslint --fix --ext .js .",
     "format:fix-ts": "eslint --fix --ext ts,.tsx .",
+    "format:pretty": "prettier --write \"**/*.{js,json,md,mdx,ts,tsx,yml}\"",
     "lint": "npm-run-all --continue-on-error lint:*",
     "lint:js": "eslint --ext .js .",
     "lint:md": "remark --no-stdout . \".github/**/*.md\"",
+    "lint:pretty": "prettier --check \"**/*.{js,json,md,mdx,ts,tsx,yml}\"",
     "lint:ts": "eslint --ext .ts,.tsx .",
     "lint:tsc": "tsc"
   },
