@@ -13,5 +13,9 @@
   "workspaces": [
     "packages/*",
     "www"
-  ]
+  ],
+  "devDependencies": {
+    "remark-cli": "^7.0.0",
+    "remark-preset-lint-arcticicestudio": ">=0.3.0 <1.0.0"
+  }
 }
