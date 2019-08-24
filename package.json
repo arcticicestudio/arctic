@@ -15,8 +15,13 @@
     "www"
   ],
   "scripts": {
-    "lint": "npm-run-all lint:*",
+    "format": "npm-run-all format:fix*",
+    "format:fix-js": "eslint --fix --ext .js .",
+    "format:fix-ts": "eslint --fix --ext ts,.tsx .",
+    "lint": "npm-run-all --continue-on-error lint:*",
+    "lint:js": "eslint --ext .js .",
     "lint:md": "remark --no-stdout . \".github/**/*.md\"",
+    "lint:ts": "eslint --ext .ts,.tsx .",
     "lint:tsc": "tsc"
   },
   "devDependencies": {
