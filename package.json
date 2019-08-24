@@ -15,13 +15,33 @@
     "www"
   ],
   "scripts": {
-    "lint": "npm-run-all lint:*",
+    "format": "npm-run-all format:fix*",
+    "format:fix-js": "eslint --fix --ext .js .",
+    "format:fix-ts": "eslint --fix --ext ts,.tsx .",
+    "lint": "npm-run-all --continue-on-error lint:*",
+    "lint:js": "eslint --ext .js .",
     "lint:md": "remark --no-stdout . \".github/**/*.md\"",
+    "lint:ts": "eslint --ext .ts,.tsx .",
     "lint:tsc": "tsc"
   },
   "devDependencies": {
+    "@arcticicestudio/eslint-config": ">=0.8.0 <1.0.0",
+    "@arcticicestudio/eslint-config-typescript": ">=0.8.0 <1.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.2.2",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
     "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
     "remark-cli": "^7.0.0",
-    "remark-preset-lint-arcticicestudio": ">=0.3.0 <1.0.0"
+    "remark-preset-lint-arcticicestudio": ">=0.3.0 <1.0.0",
+    "typescript": "^3.5.3"
   }
 }
