@@ -1,0 +1,15 @@
+# Copyright (C) 2019-present Arctic Ice Studio <development@arcticicestudio.com>
+# Copyright (C) 2019-present Sven Greb <development@svengreb.de>
+#
+# Project:    Arctic
+# Repository: https://github.com/arcticicestudio/arctic
+# License:    MIT
+
+**/node_modules/*
+
+# Explicitly include specific "dotfiles".
+# ESLint automatically applies ignore pattern for "dotfiles" by default to prevent accidentally lint over paths
+# like `.git` or any other critical paths.
+!**/.gatsby
+!.eslintrc.js
+!.remarkrc.js
