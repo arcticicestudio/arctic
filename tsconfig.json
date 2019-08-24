@@ -1,0 +1,66 @@
+/*
+ * Copyright (C) 2019-present Arctic Ice Studio <development@arcticicestudio.com>
+ * Copyright (C) 2019-present Sven Greb <development@svengreb.de>
+ *
+ * Project:    Arctic
+ * Repository: https://github.com/arcticicestudio/arctic
+ * License:    MIT
+ */
+
+{
+  "compilerOptions": {
+    /*
+     * Disallow features that require cross-file information to emit and transpile each file as a separate module.
+     * This option is mainly used to keep proper compatibility with Babel.
+     * See https://devblogs.microsoft.com/typescript/typescript-and-babel-7 for more details.
+     */
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "module": "esnext",
+    /* Babel is used as transpiler so don't emit/write any files! */
+    "noEmit": true,
+    /*
+     * This option is actually only required when using the TypeScript compiler to transpile files,
+     * but it is added for better compatibility and prevent unexpected behavior through default values.
+     */
+    "target": "esnext",
+
+    /*+----------------------+
+      + Strict Type-Checking +
+      +----------------------+*/
+    /* Enable all available strict type-checking options like `noImplicitAny`. */
+    "strict": true,
+
+    /*+-------------------+
+      + Module Resolution +
+      +-------------------+*/
+    /*
+     * The `allowSyntheticDefaultImports` and `esModuleInterop` options are mainly used to keep proper compatibility
+     * with Babel!
+     * See https://devblogs.microsoft.com/typescript/typescript-and-babel-7 for more details.
+     */
+    /* Allow default imports from modules with no default export. */
+    "allowSyntheticDefaultImports": true,
+    /*
+     * Import non-ES modules as default imports.
+     * Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all
+     * imports. It implies `allowSyntheticDefaultImports`.
+     */
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    /* Allow import of JSON files as modules like in Node. */
+    "resolveJsonModule": true,
+
+    /*+-------------------+
+      + Additional Checks +
+      +-------------------+*/
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+
+  "include": ["**/*.ts", "**/*.tsx"],
+  "exclude": ["**/.github/*", "**/node_modules/*"]
+}

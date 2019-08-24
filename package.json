@@ -16,7 +16,8 @@
   ],
   "scripts": {
     "lint": "npm-run-all lint:*",
-    "lint:md": "remark --no-stdout . \".github/**/*.md\""
+    "lint:md": "remark --no-stdout . \".github/**/*.md\"",
+    "lint:tsc": "tsc"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
