@@ -15,3 +15,10 @@
 # + Node.js +
 # +---------+
 **/node_modules/
+
+# +-------------------+
+# + Project Structure +
+# +-------------------+
+**/.cache/
+**/build/
+**/public/

@@ -58,9 +58,56 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUnusedParameters": true,
+
+    /*+---------------+
+    + Alias Imports +
+    +---------------+*/
+    "baseUrl": ".",
+    "paths": {
+      "~assets/*": ["www/src/assets/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/assets/*"],
+      "~atoms/*": [
+        "www/src/components/atoms/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components/atoms/*"
+      ],
+      "~config/*": ["www/src/config/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/config/*"],
+      "~containers/*": [
+        "www/src/components/containers/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components/containers/*"
+      ],
+      "~data/*": ["www/src/data/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/data/*"],
+      "~hooks/*": ["www/src/hooks/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/hooks/*"],
+      "~layouts/*": [
+        "www/src/components,/layouts/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components,/layouts/*"
+      ],
+      "~molecules/*": [
+        "www/src/components/molecules/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components/molecules/*"
+      ],
+      "~organisms/*": [
+        "www/src/components/organisms/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components/organisms/*"
+      ],
+      "~pages/*": ["www/src/pages/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/pages/*"],
+      "~stores/*": ["www/src/stores/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/stores/*"],
+      "~styles/*": ["www/src/styles/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/styles/*"],
+      "~templates/*": [
+        "www/src/components/templates/*",
+        "packages/@arcticicestudio/gatsby-theme-arctic/src/components/templates/*"
+      ],
+      "~utils/*": ["www/src/utils/*", "packages/@arcticicestudio/gatsby-theme-arctic/src/utils/*"]
+    }
   },
 
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["**/.github/*", "**/node_modules/*"]
+  "exclude": [
+    "**/.cache/*",
+    "**/.gatsby/*",
+    "**/.github/*",
+    "**/build/*",
+    "**/node_modules/*",
+    "**/public/*",
+    "**/static/*"
+  ]
 }

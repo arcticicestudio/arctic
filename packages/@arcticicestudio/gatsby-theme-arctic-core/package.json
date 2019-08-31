@@ -1,0 +1,72 @@
+{
+  "name": "@arcticicestudio/gatsby-theme-arctic-core",
+  "version": "0.0.0",
+  "description": "An arctic Gatsby theme that provides core configurations",
+  "author": "Arctic Ice Studio <development@arcticicestudio> (https://www.arcticicestudio.com)",
+  "homepage": "https://www.arcticicestudio.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arcticicestudio/arctic.git",
+    "directory": "packages/@arcticicestudio/gatsby-theme-arctic-core"
+  },
+  "license": "MIT",
+  "keywords": [
+    "arcticicestudio",
+    "gatsby",
+    "theme",
+    "ui"
+  ],
+  "private": true,
+  "engines": {
+    "yarn": "^1.17.3"
+  },
+  "dependencies": {
+    "gatsby-plugin-canonical-urls": "^2.1.5",
+    "gatsby-plugin-catch-links": "^2.1.6",
+    "gatsby-plugin-no-sourcemaps": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.1.5",
+    "gatsby-plugin-remove-trailing-slashes": "^2.1.4",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.2.18",
+    "gatsby-plugin-sitemap": "^2.2.9",
+    "gatsby-plugin-typescript": "^2.1.5",
+    "gatsby-plugin-webpack-size": "^1.0.0",
+    "gatsby-source-filesystem": "^2.1.18",
+    "gatsby-transformer-hjson": "^2.2.7",
+    "gatsby-transformer-json": "^2.2.6",
+    "gatsby-transformer-sharp": "^2.2.12",
+    "gatsby-transformer-yaml": "^2.2.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@types/node": "^12.7.3",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^5.0.9",
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "gatsby": "^2.15.1",
+    "git-revision-webpack-plugin": "^3.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^6.0.0-beta",
+    "webpack-bundle-analyzer": "^3.4.1"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-export-default-from": "^7.5.2",
+    "@types/node": "^12.7.3",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "^5.0.9",
+    "babel-plugin-react-remove-properties": "^0.3.0",
+    "gatsby": "^2.15.1",
+    "git-revision-webpack-plugin": "^3.0.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^6.0.0-beta",
+    "webpack-bundle-analyzer": "^3.4.1"
+  }
+}

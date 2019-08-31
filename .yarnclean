@@ -1,0 +1,15 @@
+# Copyright (C) 2019-present Arctic Ice Studio <development@arcticicestudio.com>
+# Copyright (C) 2019-present Sven Greb <development@svengreb.de>
+#
+# Project:    Arctic
+# Repository: https://github.com/arcticicestudio/arctic
+# License:    MIT
+
+# Pattern for the `autoclean` command to free up space by removing unnecessary files and folders from dependencies.
+# See https://yarnpkg.com/lang/en/docs/cli/autoclean for more details.
+
+# Delete unused typings resolved by `@types/styled-components@>4.1.8` that is used in the `www` package.
+# This entry can be removed as soon as the styled-comonents typing package has been sepatarted into
+# definitions for "React Web" and "React Native".
+# See https://github.com/DefinitelyTyped/DefinitelyTyped/issues/33311 for more details.
+@types/react-native

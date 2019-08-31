@@ -7,4 +7,8 @@
 
 # See https://prettier.io/docs/en/ignore.html for details.
 
+**/.cache/*
+**/build/*
 **/node_modules/*
+**/public/*
+**/static/*

@@ -7,8 +7,6 @@
  * License:    MIT
  */
 
-const { resolve } = require("path");
-
 /**
  * The ESLint configuration.
  * @see https://eslint.org/docs/user-guide/configuring
@@ -16,7 +14,6 @@ const { resolve } = require("path");
  * @see https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
  * @see https://www.typescriptlang.org/docs/handbook/compiler-options.html
  * @see https://github.com/babel/eslint-plugin-babel#rules
- * @see https://github.com/tc39/proposal-optional-chaining
  */
 module.exports = {
   parser: "babel-eslint",
@@ -26,14 +23,6 @@ module.exports = {
     "@arcticicestudio/eslint-config/prettier"
   ],
   plugins: ["babel"],
-  settings: {
-    "import/resolver": {
-      node: {
-        /* Resolve Webpack alias imports */
-        paths: [resolve(__dirname, "src"), resolve(__dirname, "src/components")]
-      }
-    }
-  },
   rules: {
     /*
      * Enable support for experimental features:

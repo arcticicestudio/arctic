@@ -1,0 +1,44 @@
+{
+  "name": "@arcticicestudio/gatsby-theme-arctic",
+  "version": "0.0.0",
+  "description": "An arctic Gatsby theme",
+  "author": "Arctic Ice Studio <development@arcticicestudio> (https://www.arcticicestudio.com)",
+  "homepage": "https://www.arcticicestudio.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arcticicestudio/arctic.git",
+    "directory": "packages/@arcticicestudio/gatsby-theme-arctic"
+  },
+  "license": "MIT",
+  "keywords": [
+    "arcticicestudio",
+    "gatsby",
+    "theme",
+    "ui"
+  ],
+  "private": true,
+  "engines": {
+    "yarn": "^1.17.3"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^4.3.2",
+    "gatsby-image": "^2.2.15",
+    "gatsby-plugin-styled-components": "^3.1.3",
+    "gatsby-plugin-svgr": "^2.0.2",
+    "styled-modern-normalize": ">=0.2.0 <1.0.0"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^4.1.18",
+    "gatsby": "^2.15.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  },
+  "peerDependencies": {
+    "@types/styled-components": "^4.1.18",
+    "gatsby": "^2.15.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.3.2"
+  }
+}
