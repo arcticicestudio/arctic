@@ -18,7 +18,7 @@
     "www"
   ],
   "scripts": {
-    "format": "npm-run-all format:fix* format:pretty",
+    "format": "npm-run-all format:fix:* format:pretty",
     "format:fix:js": "eslint --fix --ext .js .",
     "format:fix:ts": "eslint --fix --ext ts,.tsx .",
     "format:pretty": "prettier --write \"**/*.{js,json,md,mdx,ts,tsx,yml}\"",
